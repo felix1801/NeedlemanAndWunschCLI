@@ -1,0 +1,19 @@
+Le programme 'nwPOO.py' réalise l'alignement de 2 séquences à partir de 2 fichiers au format .fasta
+Il retournera également la matrice des scores, la matrice des traceback, le nombre de matchs, de mismatchs (intra ou extra), de gaps et le score de l'alignement.
+
+
+Il traitera uniquement la première séquence de chaque fichier .fasta. Il faut au moins 1 séquence pour que le programme fonctionne.
+Chaque séquence doit se trouver dans le fichier au format fasta, c'est à dire :
+
+>titreDeLaSequence
+SEQUENCEDACIDESAMINES
+
+
+Pour fonctionner, les fichiers 'nwPOO.py', 'MatriceTraceback', 'MatriceScore', 'LecteurFasta' et 'fichier.fasta' doivent se trouver dans le même répertoire.
+
+Avant de lancer le programme 'nwPOO.py', il faut installer l'extension 'numpy'.
+Pour cela, ouvrez un terminal de commande et coller la ligne suivante :
+	pip3 install numpy
+
+Pour modifier les valeurs de point des matchs, missmatchs et gaps, rendez-vous  dans les fichier 'MatriceTraceback' ET 'MatriceScore' à la ligne 17.
+	Remplacez les valeurs de chaque score par les valeurs souhaitées dans chacun des 2 fichiers.
